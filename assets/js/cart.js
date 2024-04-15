@@ -11,7 +11,7 @@ if (cartString) {
             console.error('There was a problem with fetching products:', error);
         });
 } else {
-    console.log('Sepette ürün yok.');
+    console.log('There is not any product in the cart');
 }
 let subtotal = 0;
 
