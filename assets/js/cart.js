@@ -96,12 +96,12 @@ function decreaseQuantity(productId) {
         const index = cart.findIndex(item => {
             console.log("Item Id:", item.productId);
             return item.productId == productId;
-        }); // Ürünü bul
+        });
         console.log("Index:", index);
 
         if (index == -1) {
             console.error('can not find product.');
-            return; // Fonksiyondan çık
+            return; 
         }
 
         
@@ -188,15 +188,6 @@ function displayCartItems() {
         console.log('Can not find any product in the cart');
     }
 }
-
-
-
-
-
-
-
-
-
 displayCartItems();
 
 let returnBtn = document.querySelector('.return');
