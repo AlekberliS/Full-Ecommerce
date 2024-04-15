@@ -26,9 +26,9 @@ function getProductById(productId, quantity) {
         .then(data => {
             const product = data.find(item => item.id === productId);
             if (product) {
-                // Ürünü bulduğumuzda, miktarı ekleyelim
+               
                 product.quantity = quantity;
-                // console.log('Found product:', product);
+               
                 return product;
             } else {
                 console.log('Product with id', productId, 'not found');
@@ -50,9 +50,9 @@ function removeItemFromCart(productId) {
         const index = cart.findIndex(item => item.productId == productId);
 
         if (index !== -1 && cart[index].quantity < 1) {
-            cart.splice(index, 1); // Ürünü sepetten sil
-            localStorage.setItem('cart', JSON.stringify(cart)); // Güncellenmiş sepeti localStorage'a kaydet
-            displayCartItems(); // Sepeti yeniden oluştur
+            cart.splice(index, 1); 
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCartItems();
         }
     }
 }
@@ -63,25 +63,25 @@ function increaseQuantity(productId) {
 
     const cartString = localStorage.getItem('cart');
     if (cartString) {
-        let cart = JSON.parse(cartString); // Sepet verilerini al
+        let cart = JSON.parse(cartString); 
         const index = cart.findIndex(item => {
             console.log("Item Id:", item.productId);
             return item.productId == productId;
-        }); // Ürünü bul
+        }); 
         console.log("Index:", index);
 
-        if (index == -1) { // Belirli bir ürün bulunamadı
-            console.error('Ürün bulunamadı veya miktar tanımlı değil.');
-            return; // Fonksiyondan çık
+        if (index == -1) { 
+            console.error('can not find product');
+            return; 
         }
 
-        // Belirli bir ürün bulundu ve miktar özelliği tanımlı
+       
         console.log(cart[index].quantity);
-        cart[index].quantity++; // Miktarı artır
+        cart[index].quantity++;
         console.log(cart[index].quantity);
         localStorage.setItem('cart', JSON.stringify(cart)); 
         window.location.reload();
-        displayCartItems(); // Sepetin yeniden oluşturulması gerekiyor
+        displayCartItems(); 
         removeItemFromCart(productId);
     }
 }
@@ -92,25 +92,25 @@ function decreaseQuantity(productId) {
 
     const cartString = localStorage.getItem('cart');
     if (cartString) {
-        let cart = JSON.parse(cartString); // Sepet verilerini al
+        let cart = JSON.parse(cartString); 
         const index = cart.findIndex(item => {
             console.log("Item Id:", item.productId);
             return item.productId == productId;
         }); // Ürünü bul
         console.log("Index:", index);
 
-        if (index == -1) { // Belirli bir ürün bulunamadı
-            console.error('Ürün bulunamadı veya miktar tanımlı değil.');
+        if (index == -1) {
+            console.error('can not find product.');
             return; // Fonksiyondan çık
         }
 
-        // Belirli bir ürün bulundu ve miktar özelliği tanımlı
+        
         console.log(cart[index].quantity);
-        cart[index].quantity--; // Miktarı artır
+        cart[index].quantity--; 
         console.log(cart[index].quantity);
-        localStorage.setItem('cart', JSON.stringify(cart)); // Güncellenmiş sepeti localStorage'a kaydet
+        localStorage.setItem('cart', JSON.stringify(cart)); 
         window.location.reload();
-        displayCartItems(); // Sepetin yeniden oluşturulması gerekiyor
+        displayCartItems();
         removeItemFromCart(productId);
     }
 }
@@ -125,15 +125,12 @@ function displayProduct(product) {
         const quantityElement = productRow.querySelector('.quantity');
         const priceElement = productRow.querySelector('.price');
         const subtotalElement = productRow.querySelector('.subtotal');
-
-        // Miktarı güncelle
+     
         quantityElement.textContent = product.quantity;
-
-        // Toplamı güncelle
         subtotalElement.textContent = `$${(product.price * product.quantity).toFixed(2)}`;
         updateTotal();
     } else {
-        // Ürünün HTML temsilini oluştur
+   
         const productHTML = `
             <div class="cart-table__row" data-product-id="${product.id}">
                 <div class="cart-table__cell title__img"><img class="product__img" src=${product.image}>${truncatedTitle}</div> 
@@ -148,11 +145,11 @@ function displayProduct(product) {
             </div>
         `;
 
-        // HTML'i ekrana ekle
+       
         const cartTable = document.querySelector('.cart-table');
         cartTable.insertAdjacentHTML('beforeend', productHTML);
 
-        // Toplamı güncelle
+      
         subtotal += product.price * product.quantity;
         updateTotal();
     }
@@ -180,15 +177,15 @@ function displayCartItems() {
                     if (product) {
                         displayProduct(product);
                     } else {
-                        console.log('Ürün bulunamadı:', item.productId);
+                        console.log('can not find product', item.productId);
                     }
                 })
                 .catch(error => {
-                    console.error('Ürün getirilirken bir hata oluştu:', error);
+                    console.error('error:', error);
                 });
         });
     } else {
-        console.log('Sepette ürün bulunamadı.');
+        console.log('Can not find any product in the cart');
     }
 }
 
