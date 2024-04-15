@@ -1,0 +1,115 @@
+.login__left img{
+  margin: 70px 0 120px 0;
+  width: 720px;
+  height: 680px;
+}
+
+.login{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.login__right {
+  margin: 180px 0px 0 100px  ;
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  /* border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.login__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login__description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login__group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.login__input {
+  padding: 10px;
+  font-family: Poppins;
+  border: none;
+  border-bottom: 1px solid #8f8f8f;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+}
+
+.login__input:focus {
+  border-color: #000;
+  box-shadow: none;
+}
+
+
+
+.login__button {
+  padding: 10px 20px;
+  background-color: #db4444; /* change to red color */
+  color: #fff;
+  width: 130px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login__button:hover {
+  background-color: #cc0000; /* change to darker red color on hover */
+}
+.login__google-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+  text-align: center;
+}
+.login__login-text {
+  font-size: 14px;
+  color: #8f8f8f;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login__login-link {
+  color: #8f8f8f;
+  text-decoration: none;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.login__login-link:hover {
+  text-decoration: underline;
+}
+.login__form__btn{
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.login__forget{
+  color: #cc0000;
+  text-align: center;
+  margin-top: 4px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  
+}

@@ -1,0 +1,133 @@
+.main{
+    width:72%;
+         margin: 40px auto ;
+    /*  margin-left: 210px; */
+}
+.cart-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .cart-table__row {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cart-table__cell {
+     padding: 10px;
+  text-align: center;  /* */
+    flex: 1;
+  }
+  
+  .cart-table__header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .cart-actions {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-actions__item {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .cart-actions__item:last-child {
+    border-bottom: none;
+  }
+  .cart__btn{
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart__btn button{
+    padding: 12px 22px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #000;
+    background-color: #fff;
+  }
+ .cart__cuponvs{
+    display: flex;
+    justify-content: space-between;
+ }
+  .cart-total {
+    text-align: right;
+    border: 1px solid #000;
+    /* border-collapse: collapse; */
+    border-radius: 2px;
+    width: 400px;
+  }
+  
+  .cart-total__row {
+    display: flex;
+    padding: 0px;
+   
+  }
+  .cart__divider{
+    width: 340px;
+    margin: 0 auto;
+  }
+  .cart-total__cell {
+    padding: 10px 0;
+    text-align: center;
+    flex: 1;
+  }
+  .first__total{
+    text-align: left; 
+margin-left: 60px; }
+  .cart-total__button {
+    border: none;
+    background-color: #f00;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-total__button:hover {
+    background-color: #c00;
+  }
+  
+  .cart-total__cell:nth-child(2) {
+    font-weight: bold;
+  }
+  .product__img{
+    width: 40px ;
+    height: 40px;
+  }
+  .title__img{
+    margin-left: 40px;
+    display: flex;
+  }
+.quantity{ 
+  /* width: 60px !important;
+  border: 0.5px solid #000; */
+    display: flex;
+   
+    gap: 4px;
+    margin-right: -160px;
+  }
+   .changer{
+    background-color: #fff;
+    border: none;
+    margin-top: -4px;
+    margin-left: 10px;  /**/
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+  }/*   */
+  .changer button{
+    background-color: #fff;
+    border: none;
+    display: block !important;
+  }
+  .changer{
+    display: block !important;
+  }

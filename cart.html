@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+</head>
+<body>
+    <header class="header">
+        <div class="head__header">
+            <div class="head__deader--description">
+            <p class="head__header--p">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! 
+                <a class="head__header-p-a"> ShopNow</a></p>
+                <select class="head__header__lang" >
+                    <option value="english">English</option>
+                    <!-- <option value="azerbaijani">Azərbaycanca</option> -->
+                    <option value="russian">Русский</option>
+                  </select>
+                  
+                  </div>
+        </div>
+        <div class="main__header">
+            <div class="page__logo">
+                <img src="./assets/images/Exclusivelogom.svg" alt="Logo">
+            </div>
+            <div class="main__header__list">
+                <ul class="main__header__list_all">
+                    <a href="./index.html"><li class="main__header__list_all_li " >Home</li></a>
+                    <a href="./contact.html"><li class="main__header__list_all_li " >Contact</li></a>
+                    <a href="./about.html"><li class="main__header__list_all_li " >About</li></a>
+                    <a href="./login.html"><li class="main__header__list_all_li " >Sign Up</li></a>
+
+                  
+                </ul>
+            </div>
+            <div class="main__header__input">
+                <input type="text" placeholder="What are you looking for?" class="main__header__input-input">
+                <div class="magnifier">
+                    <img src="./assets/images/magnifier.svg" alt="magnifier">
+                </div>
+                     </div>
+                     <div class="main__header__icons">
+                        <img src="./assets/images/heart.svg" class="heart__icon" alt="heart" onclick="goToWishlist()">
+                        <img src="./assets/images/Cart=Off.svg" alt="cart" onclick="goToCart()">
+                        <img src="./assets/images/User=Off.svg" alt="user" class="userImg">
+                        <div class="dropdown-menu hide" id="dropdownMenu">
+                            <a href="./account.html" id="profileLink"><img src="./assets/images/userdropdown.svg" alt="drp">Manage My Account</a>
+                            <a href="#" id="settingsLink"><img src="./assets/images/icon-mallbagg.svg" alt="drp">My Order</a>
+                            <a href="#" id="settingsLink"><img src="./assets/images/icon-canceel.svg" alt="drp">My Cancellations</a>
+                            <a href="#" id="settingsLink"><img src="./assets/images/Vector-review.svg" alt="drp">My Reviews</a>
+                            <span href="#" id="logoutLink" class="logOutUser"><img src="./assets/images/Icon-logout.svg" alt="">Logout</span>
+                        </div>
+                                             </div>
+                     </div>
+        </div> 
+        <hr class="header__hr">
+    </header>
+
+    <main class="main">
+        <div class="main__head">
+            <span style="color: #cecece;">Home</span>  <span>/</span> Cart
+         </div>
+         <div class="cart-table">
+            <div class="cart-table__row">
+              <div class="cart-table__cell cart-table__header">Product</div>
+              <div class="cart-table__cell cart-table__header">Price</div>
+              <div class="cart-table__cell cart-table__header">Quantity</div>
+              <div class="cart-table__cell cart-table__header">Subtotal</div>
+            </div>
+            
+         </div>
+           
+         <div class="cart__btn">
+            <button class="return">Return To Shop</button>
+            <button class="update">Update Cart</button>
+         </div>
+         <div class="cart__cuponvs">
+            <div class="cart__cupon"></div>
+             <div class="cart-total">
+            <div class="cart-total__row">
+              <div class="cart-total__cell first__total">Cart Total</div>
+                        </div>
+                        
+            <div class="cart-total__row">
+              <div class="cart-total__cell">Subtotal:</div>
+              <div class="cart-total__cell subtotal">$1750</div>
+            </div>
+            <hr class="cart__divider">
+            <div class="cart-total__row">
+              <div class="cart-total__cell">Shipping:</div>
+              <div class="cart-total__cell">Free</div>
+            </div>
+            <hr class="cart__divider">
+            <div class="cart-total__row">
+              <div class="cart-total__cell">Total:</div>
+              <div class="cart-total__cell total">$1750</div>
+            </div>
+            <hr class="cart__divider">
+            <div class="cart-total__row">
+              <div class="cart-total__cell">
+                <button class="cart-total__button">Procees to checkout</button>
+              </div>
+            </div>
+          </div>
+         </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__column footer__column--subscribe">
+                <div class="logo"><img src="./assets/images/Exclusivelogofooter.svg" alt="logo"></div>
+                <h3 class="footer__title subs">Subscribe</h3>
+                <p class="footer__text">Get 10% off your first order</p>
+                <form class="footer__form">
+                    <input class="footer__input" type="email" placeholder="Enter your email">
+                    <div class="footer__send"><img src="./assets/images/icon-send.svg" alt="send"></div>
+                </form>
+            </div>
+            <div class="footer__column footer__column--support">
+                <h3 class="footer__title">Support</h3>
+                <div class="footer__text">
+                     <p class="footer__link link">111 Bijoy sarani, Dhaka,DH 1515, Bangladesh.</p>
+                    <a class="footer__link link" href="mailto:exclusive@gmail.com">exclusive@gmail.com</a><br>
+                    <a class="footer__link link" href="tel:+88015-88888-9999">+88015-88888-9999</a>
+                </div>
+            </div>
+            <div class="footer__column footer__column--account">
+                <h3 class="footer__title">Account</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#">My Account</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Login / Register</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Cart</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Wishlist</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Shop</a></li>
+                </ul>
+            </div>
+            <div class="footer__column footer__column--quick-links">
+                <h3 class="footer__title">Quick Link</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Terms Of Use</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__column footer__column--download">
+                <h3 class="footer__title">Download App</h3>
+               <p class="footer__des">Save $3 with App New User Only</p>
+               <div class="footer__links">
+               <div class="footer__qr">
+                <img src="./assets/images/Qrcodefr.svg" alt="qr">
+               </div>
+                <div class="footer__download-app">
+                    <a class="footer__google-play" href="#">
+                        <img class="footer__google-play-img" src="./assets/images/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.svg" alt="App Store">
+                       
+                    </a>
+                    <a class="footer__app-store" href="#">
+                        <img class="footer__app-store-img" src="./assets/images/AppStore.svg" alt="Google Play">
+                        
+                    </a>
+                </div>
+                
+            </div>
+            <div class="footer__download-app2">
+                    <a class="footer__fb" href="https://www.facebook.com/?locale=az_AZ#">
+                        <img class="footer__fb" src='./assets/images/Icon-Facebook.svg' alt="fb">
+                    </a>
+                    <a class="footer__tw" href="https://twitter.com/">
+                        <img class="footer__tw" src='./assets/images/Icon-Twitter.svg' alt="rw">
+                    </a>
+                    <a class="footer__ins" href="https://instagram.com/">
+                        <img class="footer__ins" src='./assets/images/icon-instagram.svg' alt="ins">
+                    </a>
+                    <a class="footer__linkedIn" href="https://linkedin.com/">
+                        <img class="footer__linkedIn" src='./assets/images/Icon-Linkedin.svg' alt="linkedIn">
+                    </a>
+
+                </div>
+            </div>
+            
+               </div>
+       
+         <div class="footer__copyright">
+                <p class="footer__copyright--des">&copy; Rimel 2022. All rights reserved.</p>
+            </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/cart.js"></script>
+</body>
+</html>

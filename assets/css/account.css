@@ -1,0 +1,80 @@
+.account__head{
+    display: flex;
+    margin-right: 14px;
+    margin: 60px 0;
+    justify-content: space-between;
+}
+.ecommerce{
+    margin: 60px 0;
+}
+.account__maiin{
+    display: flex;
+    justify-content: space-between;
+}
+.maiin__left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.act{
+    color: #DB4444 !important;
+}
+.elem{
+    color:rgb(79, 76, 76);
+    margin-left: 30px;
+}
+.left__wishlist a{
+    color: black;
+}
+.maiin__right{
+    width: 68%;
+    padding: 20px 20px 20px 40px;
+    box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.05);
+}
+input {
+    border-radius: 4px;
+    border: none;
+    padding: 12px 100px 12px 10px;
+    font-family: Poppins;
+    background-color: #f5f5f5;
+}
+.des__head,.des__main{
+    display: flex;
+    justify-content: space-between;
+}
+.des__head--fr,.des__head--sc,.b-form__group,.des__footer{
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+}
+.profile{
+    margin: 20px 0;
+}
+.des__btn{
+    float: right;
+    font-family: Poppins;
+    margin: 30px 0;
+}
+.des__btn-cancel{
+    color: #000;
+    padding: 10px;
+    font-family: Poppins;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.des__btn-save{
+    color: #fff;
+    cursor: pointer;
+    font-family: Poppins;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 18px;
+    background-color: #DB4444;
+}
+.des__btn-save:hover{
+   background-color: #E07575;
+}
+.acc__username{
+    color: #DB4444;
+}

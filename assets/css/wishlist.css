@@ -1,0 +1,13 @@
+.cardss__cards{
+    margin: 30px auto;
+    width: 77%;
+}
+.cart__heart{
+    top: 30px;
+    left: 204px;
+    background-color: white;
+    width: 30px;
+    padding: 4px;
+    height: 28px;
+    border-radius: 50%;
+}

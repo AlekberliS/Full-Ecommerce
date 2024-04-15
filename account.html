@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/account.css">
+</head>
+<body>
+    <header class="header">
+        <div class="head__header">
+            <div class="head__deader--description">
+            <p class="head__header--p">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! 
+                <a class="head__header-p-a"> ShopNow</a></p>
+                <select class="head__header__lang" >
+                    <option value="english">English</option>
+                    <!-- <option value="azerbaijani">Azərbaycanca</option> -->
+                    <option value="russian">Русский</option>
+                  </select>
+                  
+                  </div>
+        </div>
+        <div class="main__header">
+            <div class="page__logo">
+                <img src="./assets/images/Exclusivelogom.svg" alt="Logo">
+            </div>
+            <div class="main__header__list">
+                <ul class="main__header__list_all">
+                    <a href="./index.html"><li class="main__header__list_all_li" >Home</li></a>
+                    <a href="./contact.html"><li class="main__header__list_all_li " >Contact</li></a>
+                    <a href="./about.html"><li class="main__header__list_all_li " >About</li></a>
+                    <a href="./login.html"><li class="main__header__list_all_li " >Sign Up</li></a>
+
+                  
+                </ul>
+            </div>
+            <div class="main__header__input">
+                <input type="text" placeholder="What are you looking for?" class="main__header__input-input">
+                <div class="magnifier">
+                    <img src="./assets/images/magnifier.svg" alt="magnifier">
+                </div>
+                     </div>
+                     <div class="main__header__icons">
+                        <img src="./assets/images/heart.svg" class="heart__icon" alt="heart" onclick="goToWishlist()">
+                        <img src="./assets/images/Cart=Off.svg" alt="cart" onclick="goToCart()">
+                        <img src="./assets/images/User=Off.svg" alt="user" class="userImg">
+                        <div class="dropdown-menu hide" id="dropdownMenu">
+                            <a href="./account.html" id="profileLink"><img src="./assets/images/userdropdown.svg" alt="drp">Manage My Account</a>
+                            <a href="#" id="settingsLink"><img src="./assets/images/icon-mallbagg.svg" alt="drp">My Order</a>
+                            <a href="#" id="settingsLink"><img src="./assets/images/icon-canceel.svg" alt="drp">My Cancellations</a>
+                            <a href="#" id="settingsLink"><img src="./assets/images/Vector-review.svg" alt="drp">My Reviews</a>
+                            <span href="#" id="logoutLink" class="logOutUser"><img src="./assets/images/Icon-logout.svg" alt="">Logout</span>
+                        </div>
+                                             
+                     </div>
+        </div> 
+        <hr class="header__hr">
+    </header>
+    <main class="ecommerce main">
+        <div class="ecommerce__main">
+        <div class="account__head">
+            <div class="head__left"> <span style="color: #cecece;">Home</span>  <span>/</span> Account</div>
+            <div class="head__right">Welcome <span class="acc__username">Sonaa</span></div>
+           
+       </div>
+       <div class="account__maiin">
+        <div class="maiin__left">
+              <div class="left__manage">
+                <h3 class="manage__h3">Manage My Account</h3>
+                <ul class="manage">
+                    <li class="manage__li  act elem ">My Profile</li>
+                    <li class="manage__li elem">Address Book</li>
+                    <li class="manage__li elem">My Payment Options</li>
+                </ul>
+              </div>
+              <div class="left__orders">
+                <h3 class="orders__h3">My Orders</h3>
+                <ul class="manage">
+                    <li class="orders__li elem">My Returns</li>
+                    <li class="orders__li elem">My Cancellations</li>
+                               </ul>
+              </div>
+              <div class="left__wishlist">
+                <a href="./wishlist.html"><h3>My Wishlist</h3></a>
+              </div>
+        </div>
+        <div class="maiin__right">
+            <div class="right__head">
+                <h3 class="act profile">Edit Your Profile</h3>
+            </div>
+            <div class="right__des">
+                <div class="des__head">
+                    <div class="des__head--fr">
+                    <label class="des__head-label" for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="Md" class="des__head-input">
+                   </div> 
+                   <div class="des__head--sc">
+                    <label class="des__head-label" for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Rimel" class="des__head-input">
+                </div></div>
+                <div class="des__main">
+                    <div class="b-form__group">
+                        <label class="b-form__label" for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" class="b-form__input b-form__input--email">
+                    </div>
+                    <div class="b-form__group">
+                        <label class="b-form__label" for="address">Address</label>
+                        <input type="text" id="address" placeholder="Your Address" class="b-form__input b-form__input--address">
+                    </div>
+                </div>
+                <div class="des__footer">
+                    <p class="des__footer-text">Password Changes</p>
+                    <input type="password" id="current-password" placeholder="Your Current Password" class="des__footer-input">
+                    <input type="password" id="new-password" placeholder="Your New Password" class="des__footer-input">
+                    <input type="password" id="confirm-password" placeholder="Confirm New Password" class="des__footer-input">
+                </div>
+                <div class="des__btn">
+                    <button class="des__btn-cancel">Cancel</button>
+                    <button class="des__btn-save">Save Changes</button>
+                </div>
+            </div>
+            
+        </div>
+       </div></div>
+    </main>
+    
+    
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__column footer__column--subscribe">
+                <div class="logo"><img src="./assets/images/Exclusivelogofooter.svg" alt="logo"></div>
+                <h3 class="footer__title subs">Subscribe</h3>
+                <p class="footer__text">Get 10% off your first order</p>
+                <form class="footer__form">
+                    <input class="footer__input" type="email" placeholder="Enter your email">
+                    <div class="footer__send"><img src="./assets/images/icon-send.svg" alt="send"></div>
+                </form>
+            </div>
+            <div class="footer__column footer__column--support">
+                <h3 class="footer__title">Support</h3>
+                <div class="footer__text">
+                     <p class="footer__link link">111 Bijoy sarani, Dhaka,DH 1515, Bangladesh.</p>
+                    <a class="footer__link link" href="mailto:exclusive@gmail.com">exclusive@gmail.com</a><br>
+                    <a class="footer__link link" href="tel:+88015-88888-9999">+88015-88888-9999</a>
+                </div>
+            </div>
+            <div class="footer__column footer__column--account">
+                <h3 class="footer__title">Account</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#">My Account</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Login / Register</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Cart</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Wishlist</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Shop</a></li>
+                </ul>
+            </div>
+            <div class="footer__column footer__column--quick-links">
+                <h3 class="footer__title">Quick Link</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Terms Of Use</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__column footer__column--download">
+                <h3 class="footer__title">Download App</h3>
+               <p class="footer__des">Save $3 with App New User Only</p>
+               <div class="footer__links">
+               <div class="footer__qr">
+                <img src="./assets/images/Qrcodefr.svg" alt="qr">
+               </div>
+                <div class="footer__download-app">
+                    <a class="footer__google-play" href="#">
+                        <img class="footer__google-play-img" src="./assets/images/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.svg" alt="App Store">
+                       
+                    </a>
+                    <a class="footer__app-store" href="#">
+                        <img class="footer__app-store-img" src="./assets/images/AppStore.svg" alt="Google Play">
+                        
+                    </a>
+                </div>
+                
+            </div>
+            <div class="footer__download-app2">
+                    <a class="footer__fb" href="https://www.facebook.com/?locale=az_AZ#">
+                        <img class="footer__fb" src='./assets/images/Icon-Facebook.svg' alt="fb">
+                    </a>
+                    <a class="footer__tw" href="https://twitter.com/">
+                        <img class="footer__tw" src='./assets/images/Icon-Twitter.svg' alt="rw">
+                    </a>
+                    <a class="footer__ins" href="https://instagram.com/">
+                        <img class="footer__ins" src='./assets/images/icon-instagram.svg' alt="ins">
+                    </a>
+                    <a class="footer__linkedIn" href="https://linkedin.com/">
+                        <img class="footer__linkedIn" src='./assets/images/Icon-Linkedin.svg' alt="linkedIn">
+                    </a>
+
+                </div>
+            </div>
+            
+               </div>
+       
+         <div class="footer__copyright">
+                <p class="footer__copyright--des">&copy; Rimel 2022. All rights reserved.</p>
+            </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/account.js"></script>
+</body>
+</html>

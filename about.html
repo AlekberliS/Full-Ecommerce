@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+</head>
+<body>
+    <header class="header">
+        <div class="head__header">
+            <div class="head__deader--description">
+            <p class="head__header--p">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! 
+                <a class="head__header-p-a"> ShopNow</a></p>
+                <select class="head__header__lang" >
+                    <option value="english">English</option>
+                    <!-- <option value="azerbaijani">Azərbaycanca</option> -->
+                    <option value="russian">Русский</option>
+                  </select>
+                  
+                  </div>
+        </div>
+        <div class="main__header">
+            <div class="page__logo">
+                <img src="./assets/images/Exclusivelogom.svg" alt="Logo">
+            </div>
+            <div class="main__header__list">
+                <ul class="main__header__list_all">
+                    <a href="./index.html"><li class="main__header__list_all_li " >Home</li></a>
+                    <a href="./contact.html"><li class="main__header__list_all_li " >Contact</li></a>
+                    <a href="#"><li class="main__header__list_all_li active " >About</li></a>
+                    <a href="./login.html"><li class="main__header__list_all_li " >Sign Up</li></a>
+
+                  
+                </ul>
+            </div>
+            <div class="main__header__input">
+                <input type="text" placeholder="What are you looking for?" class="main__header__input-input">
+                <div class="magnifier">
+                    <img src="./assets/images/magnifier.svg" alt="magnifier">
+                </div>
+                     </div>
+                     <div class="main__header__icons">
+                        <img src="./assets/images/heart.svg" class="heart__icon" alt="heart" onclick="goToWishlist()" >
+                        <img src="./assets/images/Cart=Off.svg" alt="cart" onclick="goToCart()">
+                        <img src="./assets/images/User=Off.svg" alt="user" class="userImg">
+                        <div class="dropdown-menu hide" id="dropdownMenu">
+                            <a href="./account.html" id="profileLink"><img src="./assets/images/userdropdown.svg" alt="drp">Manage My Account</a>
+                            <a href="#" id="settingsLink"><img src="./assets/images/icon-mallbagg.svg" alt="drp">My Order</a>
+                            <a href="#" id="settingsLink"><img src="./assets/images/icon-canceel.svg" alt="drp">My Cancellations</a>
+                            <a href="#" id="settingsLink"><img src="./assets/images/Vector-review.svg" alt="drp">My Reviews</a>
+                            <span href="#" id="logoutLink" class="logOutUser"><img src="./assets/images/Icon-logout.svg" alt="">Logout</span>
+                        </div>
+                                             </div>
+                     </div>
+        </div> 
+        <hr class="header__hr">
+    </header>
+
+    <main class="main">
+        <div class="main__head">
+           <span style="color: #cecece;">Home</span>  <span>/</span> About
+        </div>
+        <div class="main__main">
+            <div class="main__main__head">
+                <div class="main__main__head__left">
+                    <p class="left__head">Our story</p>
+                    <p class="left__main">Launced in 2015, Exclusive is South Asia’s premier online shopping makterplace with an active presense in Bangladesh. Supported by wide range of tailored marketing, data and service solutions, Exclusive has 10,500 sallers and 300 brands and serves 3 millioons customers across the region. </p>
+                <p class="left__main">Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a diverse assotment in categories ranging  from consumer.</p>
+              
+            </div>
+                <div class="main__main__head__right">
+                    <img class="right__img" src="./assets/images/aboutSideImage.png" alt="sideImg">
+                </div>
+            </div>
+        <!-- </div> -->
+<div class="main__main__cart">
+    <div class="cart__cart">
+        <img src="./assets/images/Services.svg" class="cart__img" alt="service">
+        <img src="./assets/images/FREEANDFASTDELIVERY.svg" class="cart__img2"  alt="use">
+        <p class="cart_des">Sallers active our site</p>
+    </div>
+    <div class="cart__cart redC">
+        <img src="./assets/images/Services2.svg" class="cart__img" alt="service">
+        <img src="./assets/images/MONEYBACKGUARANTEE1.svg"  class="cart__img2"  alt="use">
+        <p class="cart_des" style="color: #fff;">Monthly Produduct Sale</p>
+    </div>
+    <div class="cart__cart">
+        <img src="./assets/images/Services3.svg" class="cart__img"  alt="service">
+        <img src="./assets/images/24_7CUSTOMERSERVICE.svg" class="cart__img2"  alt="use">
+        <p class="cart_des">Customer active in our site</p>
+    </div>
+    <div class="cart__cart">
+        <img src="./assets/images/Services4.svg" class="cart__img"  alt="service">
+        <img src="./assets/images/MONEYBACKGUARANTEE2.svg"  class="cart__img2" alt="use">
+        <p class="cart_des">Anual gross sale in our site</p>
+    </div>
+
+</div>
+<div class="main__main__person">
+    <div class="person__cart">
+        <div class="person__img1"> 
+            <img class="person__img" src="./assets/images/tom_cruise.png" alt="ttom">
+        </div>
+               <p class="person--name">Tom Cruise</p>
+        <p class="person--specialtiy">Founder & Chairman</p>
+        <div class="person--links">
+                <a class="person__tw" href="https://twitter.com/">
+                    <img class="person__tw" src='./assets/images/twitter-icon.svg' alt="rw">
+                </a>
+                <a class="person__ins" href="https://instagram.com/">
+                    <img class="person__ins" src='./assets/images/icon-instagramm.svg' alt="ins">
+                </a>
+                <a class="person__linkedIn" href="https://linkedin.com/">
+                    <img class="person__linkedIn" src='./assets/images/Icon-Linkedinn.svg' alt="linkedIn">
+                </a>
+
+           
+        </div>
+    </div>
+    <div class="person__cart">
+        <div class="person__img1">
+             <img src="./assets/images/emmawatson.png" alt="ttom"></div>
+       
+        <p class="person--name">Emma Watson</p>
+        <p class="person--specialtiy">Managing Director</p>
+        <div class="person--links">
+            <a class="person__tw" href="https://twitter.com/">
+                <img class="person__tw" src='./assets/images/twitter-icon.svg' alt="rw">
+            </a>
+            <a class="person__ins"  href="https://instagram.com/">
+                <img class="person__ins" src='./assets/images/icon-instagramm.svg' alt="ins">
+            </a>
+            <a class="person__linkedIn" href="https://linkedin.com/">
+                <img class="person__linkedIn" src='./assets/images/Icon-Linkedinn.svg' alt="linkedIn">
+            </a>      
+    </div>
+    </div>
+    <div class="person__cart">
+        <div class="person__img1">
+             <img src="./assets/images/willsmith.png" alt="ttom">
+            </div>
+       
+        <p class="person--name">Will Smith</p>
+        <p class="person--specialtiy">Product Designer</p>
+        <div class="person--links">
+            <a class="person__tw" href="https://twitter.com/">
+                <img class="person__tw" src='./assets/images/twitter-icon.svg' alt="rw">
+            </a>
+            <a class="person__ins" href="https://instagram.com/">
+                <img class="person__ins" src='./assets/images/icon-instagramm.svg' alt="ins">
+            </a>
+            <a class="person__linkedIn" href="https://linkedin.com/">
+                <img class="person__linkedIn" src='./assets/images/Icon-Linkedinn.svg' alt="linkedIn">
+            </a>       
+    </div>
+    </div>
+</div>
+<div class="main__main__pagination">
+    <img src="./assets/images/pagination.svg" alt="pagination">
+</div>
+
+<div class="main__main__carts">
+    
+        <div class="carts__cart">
+            <img src="./assets/images/Services5.svg" class="cart__img4" alt="service">
+            <p class="cart_des2">FREE AND FAST DELIVERY</p>
+            <p class="cart_des3">Free delivery for all orders over $140</p>
+        </div>
+        <div class="carts__cart">
+            <img src="./assets/images/Services6.svg" class="cart__img4" alt="service">
+            <p class="cart_des2">24/7 CUSTOMER SERVICE</p>
+            <p class="cart_des3">Friendly 24/7 customer support</p>
+        </div>
+        <div class="carts__cart">
+            <img src="./assets/images/Services7.svg" class="cart__img4" alt="service">
+            <p class="cart_des2">MONEY BACK GUARANTEE</p>
+            <p class="cart_des3">We reurn money within 30 days</p>
+        </div>
+</div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__column footer__column--subscribe">
+                <div class="logo"><img src="./assets/images/Exclusivelogofooter.svg" alt="logo"></div>
+                <h3 class="footer__title subs">Subscribe</h3>
+                <p class="footer__text">Get 10% off your first order</p>
+                <form class="footer__form">
+                    <input class="footer__input" type="email" placeholder="Enter your email">
+                    <div class="footer__send"><img src="./assets/images/icon-send.svg" alt="send"></div>
+                </form>
+            </div>
+            <div class="footer__column footer__column--support">
+                <h3 class="footer__title">Support</h3>
+                <div class="footer__text">
+                     <p class="footer__link link">111 Bijoy sarani, Dhaka,DH 1515, Bangladesh.</p>
+                    <a class="footer__link link" href="mailto:exclusive@gmail.com">exclusive@gmail.com</a><br>
+                    <a class="footer__link link" href="tel:+88015-88888-9999">+88015-88888-9999</a>
+                </div>
+            </div>
+            <div class="footer__column footer__column--account">
+                <h3 class="footer__title">Account</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="./account.html">My Account</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./login.html">Login / Register</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./cart.html">Cart</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./wishlist.html">Wishlist</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./allProducts.html">Shop</a></li>
+                </ul>
+            </div>
+            <div class="footer__column footer__column--quick-links">
+                <h3 class="footer__title">Quick Link</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="./about.html">Privacy Policy</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./about.html">Terms Of Use</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./about.html">FAQ</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__column footer__column--download">
+                <h3 class="footer__title">Download App</h3>
+               <p class="footer__des">Save $3 with App New User Only</p>
+               <div class="footer__links">
+               <div class="footer__qr">
+                <img src="./assets/images/Qrcodefr.svg" alt="qr">
+               </div>
+                <div class="footer__download-app">
+                    <a class="footer__google-play" href="#">
+                        <img class="footer__google-play-img" src="./assets/images/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.svg" alt="App Store">
+                       
+                    </a>
+                    <a class="footer__app-store" href="#">
+                        <img class="footer__app-store-img" src="./assets/images/AppStore.svg" alt="Google Play">
+                        
+                    </a>
+                </div>
+                
+            </div>
+            <div class="footer__download-app2">
+                    <a class="footer__fb" href="https://www.facebook.com/?locale=az_AZ#">
+                        <img class="footer__fb" src='./assets/images/Icon-Facebook.svg' alt="fb">
+                    </a>
+                    <a class="footer__tw" href="https://twitter.com/">
+                        <img class="footer__tw" src='./assets/images/Icon-Twitter.svg' alt="rw">
+                    </a>
+                    <a class="footer__ins" href="https://instagram.com/">
+                        <img class="footer__ins" src='./assets/images/icon-instagram.svg' alt="ins">
+                    </a>
+                    <a class="footer__linkedIn" href="https://linkedin.com/">
+                        <img class="footer__linkedIn" src='./assets/images/Icon-Linkedin.svg' alt="linkedIn">
+                    </a>
+
+                </div>
+            </div>
+            
+               </div>
+       
+         <div class="footer__copyright">
+                <p class="footer__copyright--des">&copy; Rimel 2022. All rights reserved.</p>
+            </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

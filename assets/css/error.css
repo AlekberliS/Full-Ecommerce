@@ -1,0 +1,27 @@
+.error{
+    width: 70%;
+    margin: 40px auto;
+   
+}
+.error__main{
+    text-align: center;
+    margin: 80px 0;
+}
+.error__head-p{
+    font-weight: 500;
+    font-size: 94px;
+}
+.error__home{
+        color: #fff;
+    background-color: rgb(219, 68, 68);
+    display: inline-block;
+     width: 186px;
+    padding: 12px;
+    margin: 60px 0;
+    border: none;
+    border-radius: 4px;
+}
+.error__home:hover{
+    background-color: rgb(210, 12, 12);
+    cursor: pointer;
+}

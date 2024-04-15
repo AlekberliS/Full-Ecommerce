@@ -1,0 +1,155 @@
+.main{
+    /* width: 100%; */
+         margin: 40px 0    40px 210px ;
+    /*  margin-left: 210px; */
+}
+
+.main__main{
+    margin: 40px 0 ;
+
+}
+.main__main__head{ 
+ 
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.left__head{
+    font-weight: 600;
+    font-size: 54px;
+}
+.left__main{
+    font-size: 16px;
+    margin: 30px 0;
+    font-weight: 400;
+}
+.main__main__head__right{
+    float: right;
+}
+.main__main__head__left{
+    margin-top: 100px;
+}
+.main__main__cart{
+    margin: 80px 0 ;
+    width: 82%;
+    display: flex;
+    gap: 20px;
+}
+.cart__cart{
+    /* padding: 60px 40px 20px; */
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    text-align: center;
+    height: 230px;
+    border: 0.5px solid #cecece;
+}
+.cart__cart:hover{
+    scale: 1.1;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.person__cart img:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.cart__cart img{
+    width: 60px;
+    display: inline-block;
+    height: 60px;
+}
+.redC:hover{
+    background-color: darkgray;
+    cursor: pointer;
+}
+.redC{
+    background-color: #DB4444;
+}
+.cart__img{
+    margin: 20px auto 0px;
+}
+.cart__img2{
+    margin: 20px auto -8px;
+}
+.main__main__person{
+    display: flex; 
+     margin: 40px 0;
+   width: 82%;
+   justify-content: space-between;
+   gap: 20px;
+    /* 
+   
+     */
+    /*  */
+}
+.person__cart{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.person__img1 img{
+    width: 300px;
+}
+.person--name{
+    font-weight: 500;
+    font-size: 24px;
+}
+.person--specialtiy{
+    font-weight: 400;
+    font-size: 11px;
+}
+.person--links{
+    display: flex;
+    gap: 14px;
+
+}
+.person--links img{
+    display: inline-block;
+    width: 24px;
+    height: 24px !important;
+}
+
+/* .person__cart{
+    width: 300px;
+}
+.person__img{
+    width: 370px;
+} */
+
+.main__main__pagination {
+  width: 82%;
+   text-align: center;
+   margin: 80px 0;
+    /* margin: 20px 40px 0 0;
+     */
+}
+.main__main__carts{
+    display: flex;
+    width: 82%;
+    gap: 16px;
+    margin: 40px auto;
+}
+.carts__cart:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.carts__cart{
+    width: 250px;
+
+}
+.cart_des2{
+    font-weight: 600;
+    font-style: 20px;
+    text-align: center;
+}
+.cart_des3{
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+}
+.cart__img4{
+    display: inline-block;
+    /* margin-left: 60px; */
+    margin: 10px  0 0 90px;
+    /* margin: 10px 40px 0 0 ; */
+}
