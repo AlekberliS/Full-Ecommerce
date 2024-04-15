@@ -538,33 +538,4 @@ allProduct.forEach(button => {
 });
 
 
-// function getTotalCartQuantity() {
-//   let cart = JSON.parse(localStorage.getItem('cart')) || [];
-//   let totalQuantity = 0;
 
-//   // Sepetteki her öğenin miktarını topla
-//   cart.forEach(item => {
-//     totalQuantity += item.quantity;
-//   });
-
-//   return totalQuantity;
-// }
-// function updateCartIconQuantity() {
-//   const cartHeaderIcon = document.querySelector('.header__cart');
-//   const totalQuantity = getTotalCartQuantity();
-
-//   const quantitySpan = document.createElement('span');
-//   quantitySpan.textContent = totalQuantity;
-//   quantitySpan.classList = 'quantity__span'
-
-//   if (totalQuantity === 0) {
-//     quantitySpan.textContent = '';
-//   }
-
-//   cartHeaderIcon.insertAdjacentElement('afterend', quantitySpan);
-//   cartHeaderIcon.addEventListener('click',()=>{
-//     window.location.href = '/cart.html';
-//   })
-// }
-
-// updateCartIconQuantity();
