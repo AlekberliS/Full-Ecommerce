@@ -537,3 +537,8 @@ allProduct.forEach(button => {
     });
 });
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f317010ea9847496ef810ea61c84a3cac343c71e
