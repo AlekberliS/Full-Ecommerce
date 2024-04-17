@@ -14,9 +14,6 @@ placeOrderButton.addEventListener('click', function(event) {
     const paymentMethodRadioButtons = document.querySelectorAll('input[name="payment-method"]');
     let paymentMethodSelected = false;
    
-    
-      
-  
 
     paymentMethodRadioButtons.forEach(function(radioButton) {
         if (radioButton.checked) {
@@ -24,6 +21,10 @@ placeOrderButton.addEventListener('click', function(event) {
         }
     });
     
+     if (firstName === '' || streetAddress === '' || townCity === '') {
+        alert('Please fill in all required fields.');
+        return; 
+    }
     if (!phoneNumberPattern.test(phoneNumber)) {
         alert('Please enter a valid phone number. (Example format: XXXXXXXXXX)');
         phoneNumberInput.focus(); 
@@ -36,10 +37,7 @@ placeOrderButton.addEventListener('click', function(event) {
         return; 
     }
 
-    if (firstName === '' || streetAddress === '' || townCity === '') {
-        alert('Please fill in all required fields.');
-        return; 
-    }
+   
     if (!paymentMethodSelected) {
         alert('Please select a payment method.');
         return; 
@@ -54,6 +52,10 @@ placeOrderButton.addEventListener('click', function(event) {
 const billingElementsContainer = document.querySelector('.billing__elements');
 const subtotalElement = document.querySelector('.billing-summary__amount');
 const totalElement = document.querySelector('.billing-summary__amount');
+let couponApply = document.querySelector('.coupon-code__submit');
+couponApply.addEventListener('click', (e) => {
+  e.preventDefault();
+});
 
 const cartString = localStorage.getItem('cart');
 if (cartString) {
@@ -62,7 +64,7 @@ if (cartString) {
 
     Promise.all(fetchPromises)
         .then(products => {
-            // Her ürün için billing element oluştur ve içine bilgileri yerleştir
+           
             products.forEach(product => {
                 if (product) {
                     const billingElement = document.createElement('div');
@@ -91,13 +93,13 @@ if (cartString) {
                 }
             });
 
-            // Toplam miktarı hesapla ve göster
+        
             const subtotal = products.reduce((acc, product) => acc + (product ? product.price * product.quantity : 0), 0);
-            const total = subtotal; // Kargo ve vergi gibi ek maliyetler varsa burada hesaplayın
+            const total = subtotal.toFixed(2); 
             subtotalElement.textContent = `$${subtotal}`;
             totalElement.textContent = `$${total}`;
 
-            // Tüm elemanların toplam miktarını güncelle
+           
             let amountElements = document.querySelectorAll('.billing-summary__amount');
             let totalAmount = Array.from(amountElements).reduce((acc, element) => {
                 const amount = parseFloat(element.textContent.slice(1));

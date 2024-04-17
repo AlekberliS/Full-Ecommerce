@@ -159,3 +159,12 @@ sizeButtons.forEach(button => {
 
     });
 });
+
+  const buyButton = document.querySelector('.button-container__buy-button');
+ 
+
+  buyButton.addEventListener('click', () => {
+      window.location.href = 'billing.html'; 
+  });
+
+ ;

@@ -156,3 +156,5 @@ span.classList.add('wishlist-item-count');
                 span.textContent = count;
             }
 }
+
+

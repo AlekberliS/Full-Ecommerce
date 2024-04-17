@@ -2,10 +2,10 @@
   "users": [
     {
       "id": "fb29",
-      "username": "Sona Alekberlii",
-      "password": "Sona@12345",
-      "email": "sonalkbrli4@gmail.com",
-      "address": "Kingston, 5236, United Stateddsdsds"
+      "username": " ",
+      "password": "Sona@123",
+      "email": "",
+      "address": ""
     },
     {
       "id": "0c71",
@@ -36,6 +36,13 @@
       "username": "nahide islamova",
       "password": "Nahide@12",
       "email": "nahide@gmail.com"
+    },
+    {
+      "id": "2778",
+      "username": "ayten alesgerli",
+      "password": "Ayten@1234",
+      "email": "ewee@gmail.com",
+      "address": "baku"
     }
   ],
   "products": [

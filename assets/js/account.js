@@ -1,4 +1,5 @@
 let userNameElement = document.querySelector('.acc__username');
+
 let storedUser = JSON.parse(localStorage.getItem('user'));
 let userName = storedUser.username;
 let email = storedUser.email;
